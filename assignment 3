@@ -1,0 +1,139 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled4.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyP4A9txkntfWYFCAGxx7py4",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sindhunekkanti/assignment-/blob/master/assignment%203\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "nV4Z3XvgOPke",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "8c08a0e3-7857-40a6-d7e3-438fd38a2df5"
+      },
+      "source": [
+        " #pay computation to employee\n",
+        "score = input(\"Enter score: \")\n",
+        "score = float(score)\n",
+        "if score>1.0 or score<0.0 :\n",
+        "  print(\"error\")\n",
+        "elif score>=0.9 :\n",
+        "  print ('A')\n",
+        "elif score>=0.8 :\n",
+        "  print ('B')\n",
+        "elif score>=0.7 :\n",
+        "  print ('C') \n",
+        "elif score>=0.6 :\n",
+        "  print ('D')\n",
+        "else :\n",
+        "  print ('F')"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter score: 0.9\n",
+            "A\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "09Qx0g7JOhk1",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        },
+        "outputId": "03add504-c8c8-4a61-b8bd-265dff3c6ccb"
+      },
+      "source": [
+        " #using try and except \n",
+        "try:\n",
+        "    hour = int(input(\"Enter Hour: \"))\n",
+        "    rate = int(input(\"Enter Rate: \"))\n",
+        "    if hour <= 40:\n",
+        "        print(hour * rate)\n",
+        "    elif hour > 40:\n",
+        "        print((hour * rate)+(hour - 40) * (rate * 0.5))\n",
+        "except:\n",
+        "    print(\"error,please enter numeric input\")"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter Hour: 5\n",
+            "Enter Rate: 10\n",
+            "50\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ZXrbBTzXOu98",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 68
+        },
+        "outputId": "b1974c17-f6fe-48a9-ac65-406fc0375d6d"
+      },
+      "source": [
+        " #to prompt a score\n",
+        "hrs = input(\"Enter Hours:\")\n",
+        "h = float(hrs)\n",
+        "xx = input(\"Enter the Rate:\")\n",
+        "x = float(xx)\n",
+        "if h <= 40:\n",
+        "   print( h * x)\n",
+        "elif h > 40:\n",
+        "   print(40*x + (h-40)*1.5*x)"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter Hours:10\n",
+            "Enter the Rate:5\n",
+            "50.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
